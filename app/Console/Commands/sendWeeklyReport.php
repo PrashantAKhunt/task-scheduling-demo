@@ -40,13 +40,17 @@ class sendWeeklyReport extends Command
     public function handle()
     {
         $emp = AddTask::all();
+
+        foreach($emp as $empl)
+        {
  
-        $email = 'prashantkhunt1999@gmail.com';
+        $email = $empl->manager_email;
  
-        $body = $emp;
+        $body = $empl;
  
         Mail::to($email)->send(new WeeklyReport($body));
  
         $this->info('Weekly report has been send successfully');
+        }
     }
 }

@@ -18,6 +18,7 @@ class CreateAddTasksTable extends Migration
             $table->bigInteger('e_id');
             $table->string('e_name');
             $table->string('e_email');
+            $table->string('manager_email');
             $table->string('t_mon');
             $table->string('t_tue');
             $table->string('t_wed');

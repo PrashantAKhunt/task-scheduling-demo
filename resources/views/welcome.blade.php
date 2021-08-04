@@ -39,6 +39,10 @@
                 <input type="email" name="e_email" class="form-control" placeholder="Enter Your Email">    
             </div>
             <div class="form-group">
+                <label>Manager's Email address</label>
+                <input type="email" name="manager_email" class="form-control" placeholder="Enter Manager's Email">    
+            </div>
+            <div class="form-group">
             <h2>Task Details</h2><br>
                 <div class="form-group">
                 <label>Monday</label>

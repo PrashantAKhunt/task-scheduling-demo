@@ -28,17 +28,17 @@ This mail contains Weekly report of your Team.
     </tr>
     </thead>
     <tbody>
-    @foreach($body as $user)
+    
     <tr>
-        <td>{{$user->e_id}}</td>
-        <td>{{$user->e_name}}</td>
-        <td>{{$user->e_email}}</td>
-        <td>{{$user->t_mon}}</td>
-        <td>{{$user->t_tue}}</td>
-        <td>{{$user->t_wed}}</td>
-        <td>{{$user->t_thu}}</td>
-        <td>{{$user->t_fri}}</td>
+        <td>{{$body->e_id}}</td>
+        <td>{{$body->e_name}}</td>
+        <td>{{$body->e_email}}</td>
+        <td>{{$body->t_mon}}</td>
+        <td>{{$body->t_tue}}</td>
+        <td>{{$body->t_wed}}</td>
+        <td>{{$body->t_thu}}</td>
+        <td>{{$body->t_fri}}</td>
     </tr>
-    @endforeach
+    
     </tbody>
 </table>

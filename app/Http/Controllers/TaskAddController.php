@@ -15,6 +15,7 @@ class TaskAddController extends Controller
         $task->e_id = $data['e_id'];
         $task->e_name = $data['e_name'];
         $task->e_email = $data['e_email'];
+        $task->manager_email = $data['manager_email'];
         $task->t_mon = $data['t_mon'];
         $task->t_tue = $data['t_tue'];
         $task->t_wed = $data['t_wed'];
